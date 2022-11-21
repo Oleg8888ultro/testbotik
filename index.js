@@ -9,5 +9,5 @@ bot.hears('Как дела?', (ctx) => ctx.reply('Отлично'))
 bot.launch()
 process.once('SIGINT', () => bot.stop('SIGINT'))
 process.once('SIGTERM', () => bot.stop('SIGTERM'))
-
+// test
 // process.env.BOT_TOKEN
