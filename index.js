@@ -5,6 +5,7 @@ bot.start((ctx) => ctx.reply('Вас приветствует Робот пом�
 bot.help((ctx) => ctx.reply('Send me a sticker'))
 bot.on('sticker', (ctx) => ctx.reply('Like'))
 bot.hears('Привет', (ctx) => ctx.reply('Приветик мой родной'))
+bot.hears('ты откуда?', (ctx) => ctx.reply('Я из хостинга heroku'))
 bot.hears('Как дела?', (ctx) => ctx.reply('Отлично'))
 bot.launch()
 process.once('SIGINT', () => bot.stop('SIGINT'))
